@@ -1,12 +1,15 @@
 package firstProject;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("car")
+@Scope("singleton")
 public class Car implements Vehicle{
 	
-	@Autowired
+
+	
 	private Tyre tyre;
 	
 	public Tyre getTyre() {
@@ -18,7 +21,8 @@ public class Car implements Vehicle{
 	}
 
 	public void drive(){
-		System.out.println("i am driving a car"+tyre);
+		Tyre t = new Tyre();
+		System.out.println("i am driving a car"+t.getName());
 	}
 
 }

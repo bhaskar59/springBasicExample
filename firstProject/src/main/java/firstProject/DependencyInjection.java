@@ -10,11 +10,11 @@ public class DependencyInjection {
 		Car car =(Car) cxt.getBean("car");
 		car.drive();
 		
-		Bike bike =(Bike) cxt.getBean("bike");
-		bike.drive();
-		
-		Tyre tyre =(Tyre) cxt.getBean("tyre");
-		System.out.println(tyre);
+//		Bike bike =(Bike) cxt.getBean("bike");
+//		bike.drive();
+//		
+//		Tyre tyre1 =(Tyre) cxt.getBean("tyre");
+//		System.out.println(tyre1);
 		//Car c=new Car();
 	    //c.drive();
  
